@@ -1,0 +1,20 @@
+<!-- Blog Post Section -->
+<section id="posts">
+    <div class="container">
+        <div class="dash-heater">
+            <h1 class="dash-title">B O A R D S </h1>
+        </div>
+        <div class="createnew">
+            <h4>CREATE NEW POST</h4>
+        </div>
+
+
+        {{#each posts as |post|}}
+
+        {{> post-card post }}
+
+        {{else}}
+        <h3>there are currently no posts</h3>
+        {{/each}}
+
+</section>

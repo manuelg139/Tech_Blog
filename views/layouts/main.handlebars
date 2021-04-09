@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- swiper slider css file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+    <!-- custom style.css file -->
+    <link rel="stylesheet" href="/public/css/style.css>
+  <title> TECH TALK </title>
+</head>
+
+<!-- Main Site -->
+
+<body>
+
+    <!-- .Header -->
+    <header>
+
+        <div class=" overlay first">
+    </div>
+    <div class="overlay second"></div>
+    <div class="overlay third"></div>
+
+
+    <div class="wrapper">
+
+        <div class="nav">
+            <div class="logo"><img src="./img/techtalk.png" alt=""></div>
+            <div class="home-nav">
+                <h3>HOME</h3>
+            </div>
+            <div class="dash-nav">
+                <h3>DASHBOARD</h3>
+            </div>
+            <div class="login-nav">
+                <h3>LOG IN</h3>
+            </div>
+        </div>
+    </div>
+
+    <hr class="border-bottom">
+
+    <div class="content">
+
+        <div class="text">
+            <p class="subtitle">Let's Talk</p>
+            <h1 class="title">
+                <span>EVERYTHING<br>TECH</span>
+            </h1>
+            <p class="desc">Tech Talk a Dashboard Commnity </p>
+            <p class="desc">To Talk Your Favorite Tech Topics </p>
+
+        </div>
+
+        <div class="img-1"></div>
+        <div class="img-2"></div>
+        <div class="img-3"></div>
+
+
+    </div>
+    </header>
+    <!-- .Header -->
+
+    <main id="site-main">
+        {{{ body }}}
+
+    </main>
+    <!-- .Main Site -->
+
+
+
+
+
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="container">
+            <!-- copyrights  -->
+            <div class="copyrights">
+                <h3> © 2021 | All Rights Reserved by Manuel Frayre</h3>
+
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- .footer -->
+
+
+
+
+
+
+
+
+    <!-- Javascript Efects-->
+    <script>
+
+        TweenMax.from('.logo', 1, {
+            delay: 1.2,
+            opacity: 0,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+
+
+        TweenMax.from('.nav', 1, {
+            delay: 1.8,
+            opacity: 0,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.to('.border-bottom', 1, {
+            delay: 1.4,
+            width: '100%',
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from('.subtitle', 1, {
+            delay: 2.8,
+            opacity: 0,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.to('.title', 1, {
+            delay: 2.2,
+            width: '100%',
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from('.desc', 1, {
+            delay: 2.8,
+            opacity: 0,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.to('.img-1', 1, {
+            delay: 2.2,
+            width: '650px',
+
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.to('.img-2', 1, {
+            delay: 2.2,
+            width: '500px',
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.to('.img-3', 1, {
+            delay: 2.2,
+            width: '300px',
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.to('.first', 1.5, {
+            delay: .2,
+            left: '-100%',
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.to('.second', 1.5, {
+            delay: .4,
+            left: '-100%',
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.to('.third', 1.5, {
+            delay: .6,
+            left: '-100%',
+            ease: Expo.easeInOut
+        })
+
+        /* DASHBAORD */
+
+        TweenMax.from('.dash-heater', 1, {
+            delay: 2.5,
+            opacity: 0,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+
+
+        TweenMax.from('.container', 1, {
+            delay: 2.5,
+            opacity: 0,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+
+
+        TweenMax.from('.article', 1, {
+            delay: 3,
+            opacity: 0,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+
+    </script>
+
+    </body>
+
+</html>
