@@ -5,7 +5,7 @@ class Posts extends Model{}
 
 Posts.init(
    {
-       posts_id: {
+       id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         allowNull: false,
@@ -19,10 +19,10 @@ Posts.init(
         type: DataTypes.STRING,
         allowNull: false,
       },
-      post_date:{
+      /* post_date:{
         type: DataTypes.DATE,
         allowNull: false,
-      }, 
+      },  */
       users_id: {
         type: DataTypes.INTEGER,
         references: {
