@@ -1,6 +1,10 @@
 const router = require('express').Router();
 const { Posts, Users, Comments } = require('../models');
 
+
+//? HOMEPAGE DISPLAYS LOGGED IN USERS'S POSTS //
+
+
 //render homepage
 router.get('/', async (req, res) => {
   try {
