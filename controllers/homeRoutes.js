@@ -4,7 +4,6 @@ const { Posts, Users, Comments } = require('../models');
 
 //? HOMEPAGE DISPLAYS LOGGED IN USERS'S POSTS //
 
-
 //render homepage
 router.get('/', async (req, res) => {
   try {
@@ -74,13 +73,10 @@ router.get('/posts/:id', async (req, res) => {
           },
         ],
       });
-  
 
         // serialize the data
       const post = postData.get({ plain: true });
   
-
-
         // pass data to template
       res.render('singlePost', {
         ...post,

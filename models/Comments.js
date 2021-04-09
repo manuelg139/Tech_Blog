@@ -5,15 +5,11 @@ class Comments extends Model{}
 
 Comments.init(
    {
-    id: {
+      id: {
         type: DataTypes.INTEGER,
         allowNull: false,
         primaryKey: true,
         autoIncrement: true,
-      },
-      comment_content:{
-        type: DataTypes.STRING,
-        allowNull: false,
       },
       users_id: {
         type: DataTypes.INTEGER,
@@ -25,11 +21,17 @@ Comments.init(
       },
       posts_id: {
         type: DataTypes.INTEGER,
+        allowNull: false,
         references: {
           model: 'posts',
           key: 'id',
         },
       },
+      comment_content:{
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+      
    },
   {
     sequelize,
