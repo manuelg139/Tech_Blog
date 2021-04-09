@@ -11,18 +11,19 @@ Comments.init(
         primaryKey: true,
         autoIncrement: true,
       },
-      content:{
+      comment_content:{
         type: DataTypes.STRING,
         allowNull: false,
       },
-      user_id: {
+      users_id: {
         type: DataTypes.INTEGER,
+        allowNull: false,
         references: {
-          model: 'user',
-          key: 'user_id',
+          model: 'users',
+          key: 'id',
         },
       },
-      blog_id: {
+      posts_id: {
         type: DataTypes.INTEGER,
         references: {
           model: 'posts',
