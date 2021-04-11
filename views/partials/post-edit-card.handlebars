@@ -4,18 +4,23 @@
         <article class="article">
             <div class="card">
                 <a href="/posts/{{id}}">
-                    <h4 class="card-title"> {{title}} </h4>
+                    <h4 class="posts-title"> {{title}} </h4>
                 </a>
                 <p>
                     {{post_content}}
                 </p>
+                <div class="updatepost">
+                    <a href="/dashboard/editPost/{{posts.id}}">
+                        <h4>UPDATE THIS POST</h4>
+                    </a>
+                </div>
                 <br>
                 <span class="card-footer">
 
                     <ul>
 
                         <li> <img class="icon" src="https://img.icons8.com/wired/64/000000/finn.png" />
-                            @{{user.username}}</li>
+                            @{{users.username}}</li>
                         <li>
 
                         <li>
