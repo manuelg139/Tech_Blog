@@ -36,8 +36,7 @@ https://github.com/manuelg139/Tech_Blog
 - Roam around the website and enjoy the dashboard community.
 
 ## Media
-
-![screengrab](https://user-images.githubusercontent.com/75399668/114320599-3786dd00-9adc-11eb-8127-657d114fdd19.gif)
+![screengrab](https://user-images.githubusercontent.com/75399668/114320764-1ecaf700-9add-11eb-9415-1d8830b12fdf.gif)
 
 ## Technologies Used
 
