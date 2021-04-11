@@ -56,7 +56,7 @@ https://github.com/manuelg139/Tech_Blog
 - Express-handlebars
 - Express-Sessions
 - Bcrypt
-- Bulma
+
 
 ## Contributors
 
