@@ -16,10 +16,12 @@ router.get('/', async (req, res) => {
             },
             {
               model: Users,
-              attributes: ['username', 'name', 'github']
+              attributes: ['username', 'name', ]
             },
           ],
         });
+
+
         // Serialize data so the template can read it
         const posts = postData.map((post) => post.get({ plain: true }));
         // Pass serialized data and session flag into template I will create
@@ -66,6 +68,54 @@ router.get('/create', withAuth, async (req, res) => {
         res.status(500).json(err);
       }
   });
+
+
+
+
+
+
+
+// EDIT Post on Dashboard
+
+router.get('/edit/:id', withAuth, async (req, res) => {
+  try {
+      // Get all posts and JOIN with user data
+      const postData = await Posts.findOne({
+          where: {
+            id: req.params.id
+            },
+        include: [
+          {
+            model: Comments,
+            attributes: ['id', 'comment_content', 'posts_id', 'users_id',],
+            include: {
+              model: User,
+              attributes: ['username', 'github']
+            }
+          },
+          {
+            model: Users,
+            attributes: ['username', 'name', 'github']
+          },
+        ],
+      });
+      if (!postData) {
+        res.status(404).json({ message: 'No post found!!' });
+        return;
+      }
+
+      // Serialize data so the template can read it
+      const posts = postData.map((post) => post.get({ plain: true }));
+      // Pass serialized data and session flag into template I will create
+      res.render('editPost', { 
+        posts, 
+        logged_in: req.session.logged_in 
+      });
+    } catch (err) {
+      console.log(err);
+      res.status(500).json(err);
+    }
+});
 
 
 module.exports = router;

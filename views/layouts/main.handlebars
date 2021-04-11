@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- swiper slider css file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+    <!-- custom style.css file -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title> TECH TALK </title>
+</head>
+
+
+<!-- Main Site -->
+
+<body>
+
+    <!-- .Header -->
+    <header>
+
+
+        <div class="wrapper">
+
+            <div class="nav">
+                <div class="logo">
+                    <h1 class="techlogo"> TECH TALK </h1>
+                </div>
+                {{!-- {{#if loggedIn}} --}}
+                <div class="home-nav">
+                    <a href="/">
+                        <h3>HOME</h3>
+                    </a>
+                </div>
+                <div class="dash-nav">
+                    <a href="/dashboard">
+                        <h3>DASHBOARD</h3>
+                    </a>
+                </div>
+                <div class="login-nav">
+                    <a href="/dashboard/create">
+                        <h3>LOG IN</h3>
+                    </a>
+                </div>
+                {{!-- {{/if}} --}}
+            </div>
+        </div>
+
+        <hr class="border-bottom">
+
+        <div class="content">
+
+            <div class="text">
+                <p class="subtitle">Let's Talk</p>
+                <h1 class="title">
+                    <span>EVERYTHING<br>TECH</span>
+                </h1>
+                <p class="desc">Tech Talk a Dashboard Commnity </p>
+                <p class="desc">To Talk Your Favorite Tech Topics </p>
+
+            </div>
+
+            <div class="img-1"></div>
+            <div class="img-2"></div>
+            <div class="img-3"></div>
+
+
+        </div>
+    </header>
+    <!-- .Header -->
+
+    <main id="site-main">
+        {{{ body }}}
+
+    </main>
+    <!-- .Main Site -->
+
+
+
+
+
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="container">
+            <!-- copyrights  -->
+            <div class="copyrights">
+                <h3> © 2021 | All Rights Reserved by Manuel Frayre</h3>
+
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- .footer -->
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

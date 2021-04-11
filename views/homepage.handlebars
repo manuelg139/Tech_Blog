@@ -1,0 +1,137 @@
+<div class=" overlay first"></div>
+<div class="overlay second"></div>
+<div class="overlay third"></div>
+
+
+<!-- Blog Post Section -->
+<section id="posts">
+    <div class="container">
+        <div class="dash-heater">
+            <h1 class="dash-title">B O A R D S </h1>
+        </div>
+        <div class="createnew">
+            <h4>CREATE NEW POST</h4>
+        </div>
+
+
+        {{#each posts as |post|}}
+
+        {{> post-card post }}
+
+        {{else}}
+        <h3>there are currently no posts</h3>
+        {{/each}}
+
+</section>
+
+
+
+
+
+<!-- Javascript Efects-->
+<script>
+
+    TweenMax.from('.logo', 1, {
+        delay: 1.2,
+        opacity: 0,
+        x: -20,
+        ease: Expo.easeInOut
+    })
+
+
+    TweenMax.from('.nav', 1, {
+        delay: 1.8,
+        opacity: 0,
+        x: -20,
+        ease: Expo.easeInOut
+    })
+
+    TweenMax.to('.border-bottom', 1, {
+        delay: 1.4,
+        width: '100%',
+        ease: Expo.easeInOut
+    })
+
+    TweenMax.from('.subtitle', 1, {
+        delay: 2.8,
+        opacity: 0,
+        x: -20,
+        ease: Expo.easeInOut
+    })
+
+    TweenMax.to('.title', 1, {
+        delay: 2.2,
+        width: '100%',
+        ease: Expo.easeInOut
+    })
+
+    TweenMax.from('.desc', 1, {
+        delay: 2.8,
+        opacity: 0,
+        x: -20,
+        ease: Expo.easeInOut
+    })
+
+    TweenMax.to('.img-1', 1, {
+        delay: 2.2,
+        width: '650px',
+
+        ease: Expo.easeInOut
+    })
+
+    TweenMax.to('.img-2', 1, {
+        delay: 2.2,
+        width: '500px',
+        ease: Expo.easeInOut
+    })
+
+    TweenMax.to('.img-3', 1, {
+        delay: 2.2,
+        width: '300px',
+        ease: Expo.easeInOut
+    })
+
+    TweenMax.to('.first', 1.5, {
+        delay: .2,
+        left: '-100%',
+        ease: Expo.easeInOut
+    })
+
+    TweenMax.to('.second', 1.5, {
+        delay: .4,
+        left: '-100%',
+        ease: Expo.easeInOut
+    })
+
+    TweenMax.to('.third', 1.5, {
+        delay: .6,
+        left: '-100%',
+        ease: Expo.easeInOut
+    })
+
+    /* DASHBAORD */
+
+    TweenMax.from('.dash-heater', 1, {
+        delay: 2.5,
+        opacity: 0,
+        x: -20,
+        ease: Expo.easeInOut
+    })
+
+
+    TweenMax.from('.container', 1, {
+        delay: 2.5,
+        opacity: 0,
+        x: -20,
+        ease: Expo.easeInOut
+    })
+
+
+    TweenMax.from('.article', 1, {
+        delay: 3,
+        opacity: 0,
+        x: -20,
+        ease: Expo.easeInOut
+    })
+
+</script>

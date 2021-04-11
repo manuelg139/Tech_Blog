@@ -19,10 +19,11 @@ Posts.init(
         type: DataTypes.STRING,
         allowNull: false,
       },
-      /* post_date:{
+      post_date:{
         type: DataTypes.DATE,
         allowNull: false,
-      },  */
+        defaultValue: DataTypes.NOW,
+      },  
       users_id: {
         type: DataTypes.INTEGER,
         references: {

@@ -1,5 +1,6 @@
-const { Model, DataTypes } = require('sequelize');
+const { Model, DataTypes, EmptyResultError } = require('sequelize');
 const sequelize = require('../config/connection');
+
 
 class Comments extends Model{}
 
@@ -13,23 +14,24 @@ Comments.init(
       },
       users_id: {
         type: DataTypes.INTEGER,
-        allowNull: false,
         references: {
           model: 'users',
           key: 'id',
         },
       },
-      posts_id: {
+    /*   posts_id: {
         type: DataTypes.INTEGER,
         allowNull: false,
+        defaultValue: '10', 
         references: {
           model: 'posts',
           key: 'id',
         },
-      },
+      }, */
       comment_content:{
         type: DataTypes.STRING,
         allowNull: false,
+        defaultValue: 'create',
       },
       
    },

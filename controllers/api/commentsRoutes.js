@@ -4,6 +4,17 @@ const withAuth = require('../../utils/auth');
 
 
 
+
+router.get('/', (req, res) => {
+  Comments.findAll({})
+    .then(dbCommentData => res.json(dbCommentData))
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+    });
+});
+
+
 // CREATE new comments
 router.post('/', withAuth, async  (req, res) => {
     try  {
@@ -20,6 +31,9 @@ router.post('/', withAuth, async  (req, res) => {
       res.status(500).json(err);
     }
   });
+
+
+
 
 
 
